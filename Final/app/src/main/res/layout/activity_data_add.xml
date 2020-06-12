@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".VeriEkle">
+
+    <EditText
+        android:id="@+id/adSoyad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Ad Soyad"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ekleBtn"
+        app:layout_constraintEnd_toStartOf="@+id/meslek"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/meslek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint="Meslek"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/ekleBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adSoyad"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ekleBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="433dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meslek">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="370dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center"
+            android:text="Veri Ekle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
